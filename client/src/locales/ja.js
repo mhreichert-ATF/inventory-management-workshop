@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '再発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +107,8 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedRestockOrders: '提出された再発注',
+    noSubmittedOrders: 'まだ提出された再発注がありません',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,7 +128,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
     }
   },
 
@@ -360,6 +364,31 @@ export default {
     'USB-C PD 100W Power Supply': 'USB-C PD 100W電源',
     'Battery Backup Power Supply': 'バッテリバックアップ電源',
     'Adjustable Bench Power Supply': '可変ベンチ電源'
+  },
+
+  // Restocking
+  restocking: {
+    title: '再発注',
+    description: '需要主導の再発注推奨を確認し、予算内で注文を発注します',
+    budgetControl: '予算',
+    itemsRecommended: '推奨アイテム',
+    totalCost: '合計コスト',
+    remainingBudget: '残り予算',
+    placeOrder: '発注する',
+    orderSubmitted: '注文{orderNumber}が提出されました',
+    viewInOrders: 'オーダーで表示',
+    noRecommendations: '現在の予算に対する再発注推奨がありません',
+    table: {
+      sku: 'SKU',
+      itemName: 'アイテム名',
+      trend: 'トレンド',
+      demandGap: '需要ギャップ',
+      recommendedQty: '推奨数量',
+      unitCost: '単価',
+      estimatedCost: '推定コスト',
+      leadTime: 'リードタイム（日）',
+      supplier: 'サプライヤー'
+    }
   },
 
   // Customer Names
